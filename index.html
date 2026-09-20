@@ -1,402 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Mohammad Anas — Warehouse Ops & Digital Systems</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Mohammad Anas — Warehouse Keeper at Osen Factory, Jeddah, and freelance sales-funnel builder. Experience in inventory operations, MS Excel, MS Dynamics 365, and web fundamentals.">
-<link href="https://imanasansari.github.io/" rel="canonical">
-<meta property="og:title" content="Mohammad Anas — Warehouse Ops & Digital Systems">
-<meta property="og:description" content="Warehouse Keeper at Osen Factory, Jeddah, and freelance sales-funnel builder.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://imanasansari.github.io/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#0E2438;
-    --bg-panel:#123049;
-    --bg-panel-2:#0D2033;
-    --grid-line:rgba(148,196,224,0.08);
-    --rule:#2E5E7E;
-    --rule-soft:#1D3F58;
-    --text:#EAF2F6;
-    --text-muted:#93AEC0;
-    --accent:#FF7A45;
-    --accent-soft:rgba(255,122,69,0.14);
-    --mono:'JetBrains Mono', monospace;
-    --grotesk:'Space Grotesk', sans-serif;
-    --sans:'Inter', sans-serif;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:
-      linear-gradient(var(--grid-line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
-      var(--bg);
-    background-size:40px 40px, 40px 40px, 100% 100%;
-    color:var(--text);
-    font-family:var(--sans);
-    line-height:1.6;
-  }
-  a{color:inherit;}
-  .wrap{max-width:880px;margin:0 auto;padding:0 24px;}
-  ::selection{background:var(--accent);color:#0E2438;}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anas Ansari</title>
+  <meta name="description" content="Portfolio of Anas Ansari: warehouse operations and inventory control, learning Dynamics 365.">
+  <meta name="theme-color" content="#A8174D">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F5C400'/%3E%3Cstop offset='.5' stop-color='%23D9781A'/%3E%3Cstop offset='1' stop-color='%23A8174D'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #F5C400;
+      --orange: #D9781A;
+      --crimson: #A8174D;
+      --accent: #A50A45;
+      --bg: #FFFAF5;
+      --bg-soft: #FFF1E6;
+      --ink: #1A1A1A;
+      --muted: #6B6B6B;
+      --line: rgba(26, 26, 26, 0.16);
+      --gradient: linear-gradient(180deg, var(--gold) 0%, var(--orange) 42%, var(--crimson) 100%);
+      --display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+      --body: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
 
-  /* ---------- Nav ---------- */
-  header.nav{
-    position:sticky;top:0;z-index:50;
-    background:rgba(14,36,56,0.86);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--rule-soft);
-  }
-  .nav-inner{
-    max-width:880px;margin:0 auto;padding:14px 24px;
-    display:flex;align-items:center;justify-content:space-between;
-  }
-  .nav-mark{
-    font-family:var(--mono);font-size:13px;letter-spacing:0.02em;
-    color:var(--text);text-decoration:none;
-    display:flex;align-items:center;gap:8px;
-  }
-  .nav-mark .dot{width:8px;height:8px;background:var(--accent);border-radius:50%;display:inline-block;}
-  nav.links{display:flex;gap:22px;}
-  nav.links a{
-    font-size:13.5px;color:var(--text-muted);text-decoration:none;
-    transition:color .2s ease;
-  }
-  nav.links a:hover{color:var(--accent);}
-  .nav-toggle{display:none;background:none;border:1px solid var(--rule);color:var(--text);
-    font-size:13px;padding:6px 10px;border-radius:2px;font-family:var(--mono);cursor:pointer;}
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 
-  /* ---------- Hero ---------- */
-  .hero{padding:64px 0 48px;position:relative;}
-  .hero-top{
-    display:flex;gap:36px;align-items:flex-start;flex-wrap:wrap;
-  }
-  .photo-frame{
-    position:relative;width:132px;height:132px;flex:none;
-    border:1px solid var(--rule);padding:6px;
-  }
-  .photo-frame::before,.photo-frame::after,
-  .photo-frame .tick-br,.photo-frame .tick-bl{
-    content:"";position:absolute;width:10px;height:10px;
-  }
-  .photo-frame::before{top:-1px;left:-1px;border-top:2px solid var(--accent);border-left:2px solid var(--accent);}
-  .photo-frame::after{top:-1px;right:-1px;border-top:2px solid var(--accent);border-right:2px solid var(--accent);}
-  .photo-frame .tick-bl{bottom:-1px;left:-1px;border-bottom:2px solid var(--accent);border-left:2px solid var(--accent);}
-  .photo-frame .tick-br{bottom:-1px;right:-1px;border-bottom:2px solid var(--accent);border-right:2px solid var(--accent);}
-  .photo-frame img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(15%);}
+    .skip {
+      position: absolute; left: 16px; top: -60px;
+      background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 8px;
+      text-decoration: none; z-index: 10;
+    }
+    .skip:focus { top: 16px; }
 
-  .hero-id{flex:1;min-width:260px;}
-  .hero-id .kicker{
-    font-family:var(--mono);font-size:12.5px;color:var(--accent);
-    margin:0 0 10px;letter-spacing:0.03em;
-  }
-  h1{
-    font-family:var(--grotesk);font-weight:700;
-    font-size:clamp(32px,5vw,46px);line-height:1.08;margin:0 0 10px;
-  }
-  .hero-role{
-    font-family:var(--sans);color:var(--text-muted);font-size:16px;margin:0 0 18px;
-    max-width:480px;
-  }
-  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;}
-  .tag{
-    font-family:var(--mono);font-size:11.5px;color:var(--text);
-    border:1px solid var(--rule);padding:5px 10px;
-    position:relative;
-  }
-  .tag::before{
-    content:"";position:absolute;top:-1px;left:-1px;width:5px;height:5px;
-    border-top:1px solid var(--accent);border-left:1px solid var(--accent);
-  }
+    /* Hero: a tall gradient panel, echoing the domain card */
+    .hero-wrap { padding: 16px; }
+    .hero {
+      max-width: 1240px;
+      margin: 0 auto;
+      min-height: min(88svh, 860px);
+      border-radius: 28px;
+      background: var(--gradient);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 64px;
+      padding: clamp(20px, 4vw, 44px);
+    }
+    .topbar {
+      display: flex; flex-wrap: wrap; gap: 16px 32px;
+      align-items: center; justify-content: space-between;
+      color: var(--ink); font-weight: 700;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand svg { width: 32px; height: 32px; }
+    .topbar nav { display: flex; gap: 28px; }
+    .topbar nav a { text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; }
+    .topbar nav a:hover { border-bottom-color: var(--ink); }
 
-  .meta-list{display:flex;flex-direction:column;gap:7px;margin:0;padding:0;font-size:13.5px;}
-  .meta-list .row{display:flex;align-items:center;gap:8px;color:var(--text-muted);}
-  .meta-list svg{width:14px;height:14px;flex:none;stroke:var(--accent);}
-  .meta-list a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--rule);}
-  .meta-list a:hover{border-color:var(--accent);color:var(--accent);}
+    .hero h1 {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: clamp(3.4rem, 13vw, 9rem);
+      line-height: 0.92;
+      letter-spacing: -0.035em;
+      margin: 0 0 28px;
+    }
+    .hero h1 span { display: block; }
+    .lead { font-size: clamp(1.1rem, 2.2vw, 1.4rem); line-height: 1.5; max-width: 46ch; margin: 0 0 32px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
-  /* ---------- Section shell ---------- */
-  section{padding:52px 0;border-top:1px solid var(--rule-soft);}
-  .section-head{display:flex;align-items:baseline;gap:12px;margin-bottom:26px;}
-  .section-head h2{
-    font-family:var(--grotesk);font-weight:600;font-size:22px;margin:0;
-  }
-  .section-head .idx{font-family:var(--mono);font-size:12px;color:var(--text-muted);}
+    .btn {
+      display: inline-block; padding: 14px 24px; border-radius: 999px;
+      font-weight: 700; text-decoration: none; border: 2px solid transparent;
+      transition: background-color .15s ease, color .15s ease;
+    }
+    .hero .btn:focus-visible { outline-color: #fff; }
+    .btn-light { background: #fff; color: var(--accent); border-color: #fff; }
+    .btn-light:hover { background: var(--bg-soft); }
+    .btn-outline-light { color: #fff; border-color: #fff; }
+    .btn-outline-light:hover { background: rgba(255, 255, 255, 0.18); }
+    .btn-solid { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .btn-solid:hover { background: #8A083A; border-color: #8A083A; }
+    .btn-outline { color: var(--accent); border-color: var(--accent); }
+    .btn-outline:hover { background: var(--bg-soft); }
 
-  /* ---------- About ---------- */
-  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;}
-  .about-grid p{color:var(--text-muted);font-size:15px;margin:0 0 14px;}
-  .about-grid p b{color:var(--text);font-weight:600;}
-  .stat-panel{
-    border:1px solid var(--rule);background:var(--bg-panel);padding:18px 20px;
-    align-self:start;
-  }
-  .stat-panel .stat{display:flex;justify-content:space-between;padding:9px 0;
-    border-bottom:1px solid var(--rule-soft);font-size:13px;}
-  .stat-panel .stat:last-child{border-bottom:none;}
-  .stat-panel .stat span:first-child{color:var(--text-muted);}
-  .stat-panel .stat span:last-child{font-family:var(--mono);color:var(--text);}
+    /* Sections */
+    .section { max-width: 1100px; margin: 0 auto; padding: clamp(56px, 9vw, 112px) 24px; }
+    .split { display: grid; grid-template-columns: 1fr 2fr; gap: 48px; }
+    h2 {
+      font-family: var(--display); font-weight: 700;
+      font-size: clamp(2rem, 4.5vw, 2.9rem); line-height: 1.05; letter-spacing: -0.02em;
+      margin: 0;
+    }
+    h3 { font-size: 1.2rem; line-height: 1.3; margin: 0 0 6px; }
+    p { margin: 0; }
 
-  /* ---------- Skills ---------- */
-  .skill-grid{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:1px;background:var(--rule-soft);border:1px solid var(--rule-soft);
-  }
-  .skill-card{background:var(--bg-panel-2);padding:18px 18px 16px;}
-  .skill-card .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;}
-  .skill-card .name{font-size:14px;color:var(--text);}
-  .skill-card .pct{font-family:var(--mono);font-size:12px;color:var(--accent);}
-  .meter{height:3px;background:var(--rule-soft);position:relative;}
-  .meter span{position:absolute;left:0;top:0;bottom:0;background:var(--accent);}
+    .work { list-style: none; margin: 0; padding: 0; }
+    .work li {
+      display: flex; justify-content: space-between; align-items: flex-start; gap: 24px;
+      padding: 28px 0; border-top: 1px solid var(--line);
+    }
+    .work li:last-child { border-bottom: 1px solid var(--line); }
+    .work p { color: var(--muted); max-width: 52ch; }
+    .work a { color: var(--accent); font-weight: 700; white-space: nowrap; text-underline-offset: 4px; }
 
-  /* ---------- Experience timeline ---------- */
-  .timeline{position:relative;padding-left:26px;}
-  .timeline::before{content:"";position:absolute;left:4px;top:6px;bottom:6px;width:1px;background:var(--rule);}
-  .t-item{position:relative;padding-bottom:34px;}
-  .t-item:last-child{padding-bottom:0;}
-  .t-item::before{
-    content:"";position:absolute;left:-26px;top:5px;width:9px;height:9px;
-    background:var(--bg);border:1px solid var(--accent);
-  }
-  .t-item .t-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:4px;}
-  .t-item .role{font-family:var(--grotesk);font-weight:600;font-size:16px;}
-  .t-item .date{font-family:var(--mono);font-size:12px;color:var(--accent);white-space:nowrap;}
-  .t-item .org{color:var(--text-muted);font-size:13.5px;margin-bottom:10px;font-style:normal;}
-  .t-item ul{margin:0;padding-left:18px;color:var(--text-muted);font-size:14px;}
-  .t-item li{margin-bottom:6px;}
+    .band { background: var(--bg-soft); }
+    .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 40px; margin: 0; }
+    .skills dt { font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; }
+    .skills dd { margin: 0; color: var(--muted); max-width: 40ch; }
 
-  /* ---------- Education / Languages ---------- */
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px;}
-  .edu-item{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--rule-soft);font-size:14px;}
-  .edu-item:last-child{border-bottom:none;}
-  .edu-item .name{color:var(--text);}
-  .edu-item .yr{font-family:var(--mono);font-size:12px;color:var(--text-muted);white-space:nowrap;}
-  .lang-item{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--rule-soft);font-size:14px;}
-  .lang-item:last-child{border-bottom:none;}
-  .lang-dots{display:flex;gap:4px;}
-  .lang-dots span{width:7px;height:7px;background:var(--rule);display:inline-block;}
-  .lang-dots span.on{background:var(--accent);}
+    .contact p { margin: 20px 0 32px; max-width: 46ch; color: var(--muted); }
+    .contact .actions .btn:focus-visible { outline-color: var(--ink); }
 
-  /* ---------- Projects ---------- */
-  .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;}
-  .proj-card{border:1px solid var(--rule-soft);padding:20px;background:var(--bg-panel-2);
-    transition:border-color .2s ease;text-decoration:none;display:block;}
-  .proj-card:hover{border-color:var(--accent);}
-  .proj-card .p-kicker{font-family:var(--mono);font-size:11px;color:var(--accent);margin-bottom:8px;}
-  .proj-card h3{font-family:var(--grotesk);font-size:16px;margin:0 0 8px;color:var(--text);}
-  .proj-card p{font-size:13.5px;color:var(--text-muted);margin:0;}
+    footer { max-width: 1100px; margin: 0 auto; padding: 0 24px 40px; color: var(--muted); font-size: 0.95rem; }
 
-  /* ---------- Contact ---------- */
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;}
-  .contact-list a{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--rule-soft);
-    text-decoration:none;font-size:14.5px;color:var(--text);}
-  .contact-list a:last-child{border-bottom:none;}
-  .contact-list svg{width:16px;height:16px;stroke:var(--accent);flex:none;}
-  .contact-list a:hover{color:var(--accent);}
-  .social-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px;}
-  .social-row a{
-    width:38px;height:38px;border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;
-    text-decoration:none;color:var(--text-muted);transition:all .2s ease;
-  }
-  .social-row a:hover{border-color:var(--accent);color:var(--accent);}
-  .social-row svg{width:16px;height:16px;}
-
-  footer{padding:30px 0 50px;text-align:center;color:var(--text-muted);font-family:var(--mono);font-size:12px;}
-
-  @media(max-width:720px){
-    .about-grid,.two-col,.contact-grid{grid-template-columns:1fr;}
-    nav.links{display:none;}
-  }
-</style>
+    @media (max-width: 760px) {
+      .split { grid-template-columns: 1fr; gap: 28px; }
+      .skills { grid-template-columns: 1fr; }
+      .work li { flex-direction: column; gap: 12px; }
+      .topbar nav { gap: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
 </head>
 <body>
+  <a class="skip" href="#work">Skip to my work</a>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a href="#top" class="nav-mark"><span class="dot"></span>M. Anas</a>
-    <nav class="links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Work</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <div class="hero-wrap">
+    <header class="hero">
+      <div class="topbar">
+        <a class="brand" href="#top" id="top" aria-label="imanasansari.cv, top of page">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true">
+            <circle cx="32" cy="32" r="28"/>
+            <path d="M8 40c10 10 34 12 46-6" stroke-linecap="round"/>
+            <circle cx="32" cy="30" r="7" fill="currentColor" stroke="none"/>
+          </svg>
+          imanasansari.cv
+        </a>
+        <nav aria-label="Main">
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <h1><span>Anas</span><span>Ansari</span></h1>
+        <p class="lead">I keep warehouse stock accurate and moving. Right now I'm learning Dynamics 365 to bring that work into one system.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="#work">See my work</a>
+          <a class="btn btn-outline-light" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </header>
   </div>
-</header>
 
-<div class="wrap" id="top">
-  <section class="hero" style="border-top:none;">
-    <div class="hero-top">
-      <div class="photo-frame">
-        <span class="tick-bl"></span><span class="tick-br"></span>
-        <img src="https://i.ibb.co/mrBhC7S6/imgs-1.jpg" alt="Mohammad Anas">
-      </div>
-      <div class="hero-id">
-        <p class="kicker">Jeddah, Saudi Arabia (KSA)</p>
-        <h1>Mohammad Anas</h1>
-        <p class="hero-role">Warehouse Keeper focused on accurate, efficient operations — and a freelance builder of sales funnels and simple web tools on the side.</p>
-        <div class="tags">
-          <span class="tag">Warehouse Operations</span>
-          <span class="tag">Freelance Funnel Builder</span>
-          <span class="tag">MS Excel · Dynamics 365</span>
-        </div>
-        <div class="meta-list">
-          <div class="row">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>
-            Al-Wafa, Jeddah, Saudi Arabia
-          </div>
-          <div class="row">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="1.5"/><path d="M2 6l10 7 10-7"/></svg>
-            <a href="mailto:anasansari8974@gmail.com">anasansari8974@gmail.com</a>
-          </div>
-          <div class="row">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 8h16M9 4v16"/></svg>
-            <a href="https://premium-funnel.systeme.io/d2559d56" target="_blank" rel="noopener">See a funnel I built →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="section-head"><h2>About</h2></div>
-    <div class="about-grid">
-      <div>
-        <p>I currently work as a <b>Warehouse Keeper at Osen Factory</b>, Modon Industry, Jeddah — handling receiving and dispatching, stock accuracy, and day-to-day production support. I rely on <b>Microsoft Excel</b> and I'm building hands-on experience with <b>MS Dynamics 365</b> to keep records and reporting clean and reliable.</p>
-        <p>Alongside that, I freelance building <b>sales funnels</b> for small businesses, and picked up enough <b>HTML, CSS and JavaScript</b> along the way to put pages together myself rather than only using drag-and-drop tools. It's a self-taught, practical skill set — built by doing real client work, not a classroom exercise.</p>
-        <p>I'm looking to keep growing in both directions: deeper into warehouse and ERP systems, and further into the web/funnel side as a freelancer.</p>
-      </div>
-      <div class="stat-panel">
-        <div class="stat"><span>Role</span><span>Warehouse Keeper</span></div>
-        <div class="stat"><span>Company</span><span>Osen Factory</span></div>
-        <div class="stat"><span>Since</span><span>2025</span></div>
-        <div class="stat"><span>Freelance</span><span>Funnel Building</span></div>
-        <div class="stat"><span>Based in</span><span>Jeddah, KSA</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="section-head"><h2>Skills</h2></div>
-    <div class="skill-grid">
-      <div class="skill-card"><div class="row"><span class="name">Warehouse &amp; Inventory Ops</span><span class="pct">85%</span></div><div class="meter"><span style="width:85%"></span></div></div>
-      <div class="skill-card"><div class="row"><span class="name">Microsoft Excel</span><span class="pct">80%</span></div><div class="meter"><span style="width:80%"></div></div>
-      <div class="skill-card"><div class="row"><span class="name">MS Dynamics 365</span><span class="pct">60%</span></div><div class="meter"><span style="width:60%"></span></div></div>
-      <div class="skill-card"><div class="row"><span class="name">Sales Funnel Building</span><span class="pct">70%</span></div><div class="meter"><span style="width:70%"></span></div></div>
-      <div class="skill-card"><div class="row"><span class="name">HTML / CSS</span><span class="pct">65%</span></div><div class="meter"><span style="width:65%"></span></div></div>
-      <div class="skill-card"><div class="row"><span class="name">JavaScript (basics)</span><span class="pct">40%</span></div><div class="meter"><span style="width:40%"></span></div></div>
-      <div class="skill-card"><div class="row"><span class="name">Microsoft Word / PowerPoint</span><span class="pct">75%</span></div><div class="meter"><span style="width:75%"></span></div></div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="section-head"><h2>Experience</h2></div>
-    <div class="timeline">
-      <div class="t-item">
-        <div class="t-head"><span class="role">Warehouse Keeper</span><span class="date">2025 — Present</span></div>
-        <div class="org">Osen Factory, Modon Industry, Jeddah, Saudi Arabia</div>
-        <ul>
-          <li>Manage day-to-day warehouse operations, including receiving and dispatching of goods.</li>
-          <li>Support production management processes to keep warehouse workflow running smoothly.</li>
-          <li>Track inventory and operational performance using Microsoft Excel and MS Dynamics 365.</li>
-          <li>Maintain accurate records and reporting using computer and IT skills.</li>
+  <main>
+    <!-- Sample projects: replace with your own. -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="split">
+        <h2 id="work-title">Things I've built</h2>
+        <ul class="work">
+          <li>
+            <div>
+              <h3>Daily stock count sheet</h3>
+              <p>A simple sheet for counting stock by shelf and flagging items that fall below their reorder level.</p>
+            </div>
+            <a href="https://github.com/imanasansari">View on GitHub</a>
+          </li>
+          <li>
+            <div>
+              <h3>Receiving checklist</h3>
+              <p>A step-by-step check for incoming deliveries: quantities, damage and paperwork before anything is shelved.</p>
+            </div>
+            <a href="https://github.com/imanasansari">View on GitHub</a>
+          </li>
+          <li>
+            <div>
+              <h3>Dynamics 365 study notes</h3>
+              <p>Notes and practice exercises from learning inventory and warehouse management in Dynamics 365.</p>
+            </div>
+            <a href="https://github.com/imanasansari">View on GitHub</a>
+          </li>
         </ul>
       </div>
-      <div class="t-item">
-        <div class="t-head"><span class="role">Freelance Funnel Builder</span><span class="date">Ongoing</span></div>
-        <div class="org">Self-employed</div>
-        <ul>
-          <li>Build sales funnels for small businesses and individual clients using Systeme.io.</li>
-          <li>Apply basic HTML, CSS and JavaScript to customize pages beyond template defaults.</li>
-          <li>Handle a project end-to-end: structure, copy placement, and page-to-page flow.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="education">
-    <div class="section-head"><h2>Education &amp; Languages</h2></div>
-    <div class="two-col">
-      <div>
-        <div class="edu-item"><span class="name">Madarsa Jameul Ulum</span><span class="yr">2007–2013</span></div>
-        <div class="edu-item"><span class="name">Habib Inter College</span><span class="yr">2013–2020</span></div>
-        <div class="edu-item"><span class="name">Bachelor of Science (B.Sc.), Veer Bahadur Singh Purvanchal University</span><span class="yr">2021–2023</span></div>
-        <div class="edu-item"><span class="name">Certificate in Information Technology, Jamia Millia Islamia</span><span class="yr">2024</span></div>
-      </div>
-      <div>
-        <div class="lang-item"><span>Hindi</span><span class="lang-dots"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></span></div>
-        <div class="lang-item"><span>Urdu</span><span class="lang-dots"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></span></div>
-        <div class="lang-item"><span>English</span><span class="lang-dots"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></span></div>
-      </div>
+    <div class="band" id="skills">
+      <section class="section" aria-labelledby="skills-title">
+        <div class="split">
+          <h2 id="skills-title">What I do</h2>
+          <dl class="skills">
+            <div>
+              <dt>Inventory control</dt>
+              <dd>Cycle counts, reorder levels and keeping stock records accurate.</dd>
+            </div>
+            <div>
+              <dt>Receiving and dispatch</dt>
+              <dd>Checking, labelling and shelving incoming goods, then picking and packing orders.</dd>
+            </div>
+            <div>
+              <dt>Dynamics 365</dt>
+              <dd>Learning warehouse and inventory management in Dynamics 365 Supply Chain Management.</dd>
+            </div>
+            <div>
+              <dt>Reporting</dt>
+              <dd>Turning daily numbers into clear summaries that managers can act on.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
     </div>
-  </section>
 
-  <section id="projects">
-    <div class="section-head"><h2>Work &amp; Projects</h2></div>
-    <div class="proj-grid">
-      <a class="proj-card" href="https://premium-funnel.systeme.io/d2559d56" target="_blank" rel="noopener">
-        <div class="p-kicker">Freelance · Funnel</div>
-        <h3>Sales Funnel — Live Example</h3>
-        <p>A working sales funnel built end-to-end, from page flow to layout, as an example of my freelance funnel-building work.</p>
-      </a>
-      <a class="proj-card" href="https://about.fahmitech.eu.org/tools/img-to-pdf" target="_blank" rel="noopener">
-        <div class="p-kicker">Web Tool</div>
-        <h3>Image to PDF Converter</h3>
-        <p>A simple browser tool to convert images to PDF without losing quality.</p>
-      </a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="section-head"><h2>Contact</h2></div>
-    <div class="contact-grid">
-      <div class="contact-list">
-        <a href="mailto:anasansari8974@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="1.5"/><path d="M2 6l10 7 10-7"/></svg>
-          anasansari8974@gmail.com
-        </a>
-        <a href="tel:+966546323619">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L7.9 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
-          +966 546 323 619
-        </a>
-        <a href="https://wa.me/966546323619" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
-          WhatsApp chat
-        </a>
-        <a href="https://t.me/imanasansari" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>
-          @imanasansari on Telegram
-        </a>
-      </div>
-      <div>
-        <p style="color:var(--text-muted);font-size:13.5px;margin:0 0 14px;">Find me elsewhere:</p>
-        <div class="social-row">
-          <a href="https://www.facebook.com/anas007" target="_blank" rel="noopener" title="Facebook">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://instagram.com/anasansari._0" target="_blank" rel="noopener" title="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-          </a>
-          <a href="https://twitter.com/affiliatejump" target="_blank" rel="noopener" title="Twitter / X">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 4s-.7 2.1-2 3.4c1.6 9.4-9.4 16.1-17 10.6 2.4.1 4.8-.7 6.5-2.1-2.5-.1-4.5-1.7-5.2-3.9.8.1 1.6.1 2.3-.1-2.6-.5-4.4-2.8-4.4-5.4v-.1c.7.4 1.6.7 2.5.7C2.4 5.4 1.7 2.5 3 .6c2.9 3.5 7.1 5.8 11.9 6-1-4.7 4.9-7.1 7.9-3.7 1.2-.2 2.4-.7 3.4-1.4-.4 1.3-1.2 2.3-2.3 3 1.1-.1 2.1-.4 3.1-.9z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/@highlevel_expert" target="_blank" rel="noopener" title="YouTube">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>
-          </a>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="split">
+        <h2 id="contact-title">Say hello</h2>
+        <div>
+          <p style="margin-top:0">Want to work together or just talk stock and systems? Email me, or look through my code on GitHub.</p>
+          <div class="actions">
+            <!-- Replace with your real email address. -->
+            <a class="btn btn-solid" href="mailto:you@example.com">Email me</a>
+            <a class="btn btn-outline" href="https://github.com/imanasansari">Open GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </main>
 
-<footer>Mohammad Anas — Jeddah, Saudi Arabia</footer>
-
+  <footer>&copy; 2026 Anas Ansari</footer>
 </body>
 </html>
