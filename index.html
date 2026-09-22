@@ -4,7 +4,1146 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mohammad Anas</title>
-  <meta name="description" content="Portfolio of Anas Ansari: warehouse operations and inventory control, learning Dynamics 365.">
+  <meta name="description" content="Portf<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Automatic Funnel | AI-Powered Funnels That Convert</title>
+<meta name="description" content="AI Automatic Funnel builds high-converting funnels, landing pages and AI-powered automation systems designed to turn traffic into leads and customers.">
+
+<meta property="og:title" content="AI Automatic Funnel | AI-Powered Funnels That Convert">
+<meta property="og:description" content="AI-powered funnels, landing pages and automation systems built to turn traffic into customers.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* =============================================
+   AI AUTOMATIC FUNNEL — DESIGN TOKENS
+============================================= */
+:root {
+  /* backgrounds */
+  --bg: #05060f;
+  --bg-elevated: #0a0d1c;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card-hover: rgba(255, 255, 255, 0.055);
+
+  /* accents */
+  --blue: #3b7bff;
+  --blue-bright: #5b9bff;
+  --purple: #8b5cf6;
+  --cyan: #22d3ee;
+
+  /* text */
+  --text: #f3f5fb;
+  --text-muted: #9aa2b8;
+  --text-faint: #6b7290;
+
+  /* borders / shadows */
+  --border: rgba(255, 255, 255, 0.09);
+  --border-bright: rgba(120, 150, 255, 0.35);
+  --shadow-glow: 0 0 60px rgba(59, 123, 255, 0.25);
+
+  /* layout */
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --max-width: 1180px;
+  --section-pad: clamp(64px, 10vw, 140px);
+
+  /* type */
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-script: "Playfair Display", serif;
+}
+
+/* =============================================
+   RESET
+============================================= */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, h4 { font-family: var(--font-display); margin: 0; line-height: 1.15; }
+p { margin: 0; }
+button { font-family: inherit; cursor: pointer; }
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* =============================================
+   BACKGROUND LAYERS
+============================================= */
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 90%);
+}
+
+.bg-noise {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+main, header { position: relative; z-index: 1; }
+
+/* =============================================
+   BUTTONS
+============================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(91, 91, 255, 0.35);
+}
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(91, 91, 255, 0.5);
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  border-color: var(--border);
+}
+.btn--ghost:hover {
+  border-color: var(--border-bright);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.btn--lg { padding: 15px 30px; font-size: 1rem; }
+.btn--nav { padding: 10px 20px; font-size: 0.875rem; }
+
+/* =============================================
+   1. NAVIGATION
+============================================= */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 18px 0;
+  backdrop-filter: blur(0px);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.35s ease, border-color 0.35s ease, backdrop-filter 0.35s ease, padding 0.35s ease;
+}
+
+.nav.is-scrolled {
+  padding: 12px 0;
+  background: rgba(5, 6, 15, 0.75);
+  border-bottom-color: var(--border);
+  backdrop-filter: blur(14px);
+}
+
+.nav__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-right: auto;
+}
+
+.nav__mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue-bright), var(--purple));
+  box-shadow: 0 0 14px 2px rgba(91, 155, 255, 0.7);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav__links a {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+.nav__links a:hover { color: var(--text); }
+
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.nav__toggle span {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  margin: 0 auto;
+  background: var(--text);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.nav__toggle.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav__toggle.is-open span:nth-child(2) { opacity: 0; }
+.nav__toggle.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* =============================================
+   2. HERO
+============================================= */
+.hero {
+  position: relative;
+  padding: clamp(56px, 10vw, 110px) 24px clamp(80px, 10vw, 130px);
+  overflow: hidden;
+}
+
+.hero__glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: -1;
+}
+.hero__glow--blue {
+  width: 620px;
+  height: 620px;
+  top: -220px;
+  left: -160px;
+  background: radial-gradient(circle, rgba(59, 123, 255, 0.4), transparent 70%);
+}
+.hero__glow--purple {
+  width: 560px;
+  height: 560px;
+  top: -120px;
+  right: -220px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.35), transparent 70%);
+}
+
+.hero__inner--centered {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--blue-bright);
+  background: rgba(59, 123, 255, 0.08);
+  border: 1px solid rgba(91, 155, 255, 0.35);
+  padding: 10px 20px;
+  border-radius: 999px;
+  margin-bottom: 28px;
+  box-shadow: 0 0 24px rgba(59, 123, 255, 0.15);
+}
+
+.hero__badge-dot {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(91, 155, 255, 0.5);
+  position: relative;
+}
+.hero__badge-dot::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 10px 2px rgba(34, 211, 238, 0.8);
+}
+
+.hero__title--centered {
+  font-size: clamp(2rem, 5.4vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 26px;
+}
+
+.hero__script {
+  display: inline-block;
+  font-family: var(--font-script);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.4em;
+  line-height: 1;
+  background: linear-gradient(135deg, #ffffff 0%, var(--cyan) 55%, var(--blue-bright) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 0.1em 0;
+}
+
+.hero__script--sm { font-size: 1.15em; }
+
+.hero__accent { color: var(--cyan); }
+
+.hero__subtitle--centered {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 34px;
+}
+
+.hero__subtitle-highlight { color: var(--cyan); font-weight: 500; }
+.hero__underline { text-decoration: underline; text-decoration-color: rgba(255,255,255,0.4); text-underline-offset: 3px; }
+
+.hero__actions--centered { justify-content: center; margin-bottom: 48px; }
+
+/* ---- video showcase card ---- */
+.video-card {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-bright);
+  background: #060a16;
+  box-shadow: var(--shadow-glow);
+  padding: 14px 14px 20px;
+  overflow: visible;
+}
+
+.video-card__sound {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(8, 10, 20, 0.75);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.video-card__sound-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ff4d4d;
+  font-size: 0.6rem;
+}
+
+.video-card__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(10, 13, 28, 0.85);
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-card__nav--prev { left: -17px; }
+.video-card__nav--next { right: -17px; }
+
+.video-card__stage {
+  position: relative;
+  height: 340px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 30% 100%, rgba(59, 123, 255, 0.35), transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.3), transparent 55%),
+    linear-gradient(180deg, #0b0f22 0%, #050712 100%);
+}
+
+.video-card__bulb {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffdd88;
+  box-shadow: 0 0 20px 6px rgba(255, 221, 136, 0.55);
+}
+
+.video-card__plant {
+  position: absolute;
+  bottom: 0;
+  left: 4%;
+  width: 60px;
+  height: 90px;
+  background: linear-gradient(180deg, rgba(34, 197, 94, 0.25), transparent);
+  border-radius: 50% 50% 0 0 / 70% 70% 0 0;
+  opacity: 0.5;
+}
+
+.video-card__figure {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-58%);
+  width: 190px;
+  height: 260px;
+}
+.video-card__figure-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: linear-gradient(160deg, rgba(255,255,255,0.16), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.video-card__figure-body {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px;
+  height: 170px;
+  border-radius: 90px 90px 0 0;
+  background: linear-gradient(160deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.video-card__diagram {
+  position: absolute;
+  top: 8%;
+  right: 4%;
+  width: 46%;
+  height: auto;
+  color: var(--cyan);
+  filter: drop-shadow(0 0 6px rgba(34, 211, 238, 0.5));
+}
+
+.video-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(59, 123, 255, 0.4);
+}
+
+.video-card__caption {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 18px;
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+.scroll-cue span {
+  width: 4px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--blue-bright);
+  animation: scrollcue 1.8s ease infinite;
+}
+@keyframes scrollcue {
+  0% { transform: translateY(0); opacity: 1; }
+  70% { transform: translateY(10px); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* =============================================
+   3. SOCIAL PROOF
+============================================= */
+.proof {
+  padding: 48px 24px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.proof__label {
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 0.85rem;
+  max-width: 520px;
+  margin: 0 auto 28px;
+}
+
+.proof__track-wrap {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+}
+
+.proof__track {
+  display: flex;
+  width: max-content;
+  gap: clamp(40px, 6vw, 72px);
+  animation: scroll-logos 28s linear infinite;
+}
+
+.proof__logo {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-faint);
+  white-space: nowrap;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+@keyframes scroll-logos {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* =============================================
+   SHARED SECTION HEADINGS
+============================================= */
+.section-kicker {
+  font-size: 0.85rem;
+  color: var(--cyan);
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: clamp(1.9rem, 3.4vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  max-width: 640px;
+}
+
+/* =============================================
+   4. VALUE PROPOSITION
+============================================= */
+.value {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-pad) 24px;
+}
+
+.value__intro { margin-bottom: 56px; }
+
+.value__lede {
+  margin-top: 20px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 620px;
+}
+
+.value__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  padding: 30px 26px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+.value-card:hover {
+  border-color: var(--border-bright);
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+}
+
+.value-card__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(59,123,255,0.18), rgba(139,92,246,0.18));
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+.value-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* =============================================
+   5. HOW IT WORKS / PROCESS
+============================================= */
+.process {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-pad) 24px;
+}
+
+.process__intro { margin-bottom: 56px; }
+
+.process__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  z-index: 1;
+}
+
+.process-card {
+  padding: 28px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: linear-gradient(160deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01));
+  position: relative;
+}
+
+.process-card__index {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--blue-bright), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 18px;
+}
+
+.process-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* =============================================
+   SCROLL REVEAL
+============================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+@media (max-width: 980px) {
+  .value__grid { grid-template-columns: repeat(2, 1fr); }
+  .process__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .nav__links { 
+    position: fixed;
+    top: 68px;
+    left: 16px;
+    right: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background: rgba(8, 10, 22, 0.97);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 14px;
+    transform: translateY(-12px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+  .nav__links.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav__links a {
+    width: 100%;
+    padding: 10px 8px;
+    border-radius: 8px;
+  }
+  .nav__links a:hover { background: rgba(255,255,255,0.04); }
+
+  .nav__toggle { display: flex; }
+  .btn--nav { display: none; }
+
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { width: 100%; }
+
+  .value__grid { grid-template-columns: 1fr; }
+  .process__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .video-card__stage { height: 300px; }
+  .video-card__nav { display: none; }
+  .hero__badge { font-size: 0.7rem; padding: 8px 16px; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- BACKGROUND LAYERS -->
+<!-- ============================================= -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<!-- ============================================= -->
+<!-- 1. NAVIGATION -->
+<!-- ============================================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <span class="nav__mark" aria-hidden="true"></span>
+      AI Automatic Funnel
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#top">Home</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#work">Our Work</a>
+      <a href="#results">Results</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#book-a-call">Book a Call</a>
+    </nav>
+
+    <a href="#book-a-call" class="btn btn--primary btn--nav">Book a Free Strategy Call</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================================= -->
+  <!-- 2. HERO SECTION -->
+  <!-- ============================================= -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero__glow hero__glow--blue" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--purple" aria-hidden="true"></div>
+
+    <div class="hero__inner hero__inner--centered">
+
+      <div class="hero__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        <span>For Coaches, Consultants &amp; Agencies<br>Ready To Scale With AI</span>
+      </div>
+
+      <h1 class="hero__title hero__title--centered">
+        We Build AI-Accelerated<br>
+        <span class="hero__script">AI Funnels</span><br>
+        That Turn Cold Traffic Into<br>
+        <span class="hero__accent">Paying Customers</span>, Fast
+      </h1>
+
+      <p class="hero__subtitle hero__subtitle--centered">
+        Most funnels collect leads that never buy. We build
+        <span class="hero__subtitle-highlight">AI-accelerated funnels</span>
+        that get you real buyers on the front end
+        <span class="hero__underline">and move the right ones into your high-ticket offer automatically</span> —
+        <strong>completely done-for-you.</strong>
+      </p>
+
+      <div class="hero__actions hero__actions--centered">
+        <a href="#book-a-call" class="btn btn--primary btn--lg">Book a Free Strategy Call</a>
+        <a href="#work" class="btn btn--ghost btn--lg">See Our Work</a>
+      </div>
+
+      <!-- Video-style showcase card -->
+      <div class="video-card">
+        <button class="video-card__sound" type="button">
+          <span class="video-card__sound-icon" aria-hidden="true">🔊</span>
+          Click To Turn On Sound
+        </button>
+
+        <button class="video-card__nav video-card__nav--prev" type="button" aria-label="Previous">‹</button>
+        <button class="video-card__nav video-card__nav--next" type="button" aria-label="Next">›</button>
+
+        <div class="video-card__stage">
+          <div class="video-card__bulb" aria-hidden="true"></div>
+          <div class="video-card__plant" aria-hidden="true"></div>
+
+          <div class="video-card__figure" aria-hidden="true">
+            <span class="video-card__figure-head"></span>
+            <span class="video-card__figure-body"></span>
+          </div>
+
+          <svg class="video-card__diagram" viewBox="0 0 220 220" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.85">
+              <circle cx="40" cy="34" r="12"></circle>
+              <circle cx="90" cy="20" r="8"></circle>
+              <circle cx="130" cy="40" r="8"></circle>
+              <line x1="52" y1="40" x2="82" y2="60" stroke-dasharray="3 4"></line>
+              <line x1="98" y1="28" x2="82" y2="60" stroke-dasharray="3 4"></line>
+              <line x1="122" y1="46" x2="82" y2="60" stroke-dasharray="3 4"></line>
+              <path d="M60 60 L104 60 L92 96 L72 96 Z"></path>
+              <line x1="82" y1="96" x2="82" y2="120"></line>
+              <circle cx="82" cy="134" r="13"></circle>
+              <text x="82" y="139" text-anchor="middle" font-size="13" stroke="none" fill="currentColor">$</text>
+              <polyline points="140,150 158,130 176,144 196,104" stroke-width="2"></polyline>
+              <polyline points="188,104 196,104 196,112" stroke-width="2"></polyline>
+            </g>
+          </svg>
+
+          <button class="video-card__play" type="button" aria-label="Play video">
+            <span aria-hidden="true">▶</span>
+          </button>
+        </div>
+
+        <p class="video-card__caption">See The <span class="hero__script hero__script--sm">Build</span></p>
+      </div>
+    </div>
+
+    <button class="scroll-cue" id="scrollCue" aria-label="Scroll to see more">
+      <span></span>
+    </button>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 3. SOCIAL PROOF / LOGO STRIP -->
+  <!-- ============================================= -->
+  <section class="proof" aria-label="Trusted by">
+    <p class="proof__label">Trusted by businesses, creators and online brands building their next funnel</p>
+
+    <div class="proof__track-wrap">
+      <div class="proof__track">
+        <span class="proof__logo">NORTHPEAK</span>
+        <span class="proof__logo">Lumen&nbsp;Digital</span>
+        <span class="proof__logo">VERDANT</span>
+        <span class="proof__logo">Kaia&nbsp;Studio</span>
+        <span class="proof__logo">ORBITAL</span>
+        <span class="proof__logo">Fieldnote&nbsp;Co.</span>
+        <span class="proof__logo">HALCYON</span>
+        <span class="proof__logo">Rivet&nbsp;&amp;&nbsp;Row</span>
+        <!-- duplicated for seamless loop -->
+        <span class="proof__logo" aria-hidden="true">NORTHPEAK</span>
+        <span class="proof__logo" aria-hidden="true">Lumen&nbsp;Digital</span>
+        <span class="proof__logo" aria-hidden="true">VERDANT</span>
+        <span class="proof__logo" aria-hidden="true">Kaia&nbsp;Studio</span>
+        <span class="proof__logo" aria-hidden="true">ORBITAL</span>
+        <span class="proof__logo" aria-hidden="true">Fieldnote&nbsp;Co.</span>
+        <span class="proof__logo" aria-hidden="true">HALCYON</span>
+        <span class="proof__logo" aria-hidden="true">Rivet&nbsp;&amp;&nbsp;Row</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 4. VALUE PROPOSITION -->
+  <!-- ============================================= -->
+  <section class="value" id="value" aria-label="What we do">
+    <div class="value__intro reveal">
+      <p class="section-kicker">What We Do</p>
+      <h2 class="section-title">Build. Automate. Convert.</h2>
+      <p class="value__lede">
+        We combine conversion-focused design, AI automation and strategic funnel architecture to create digital experiences designed to turn traffic into leads and customers.
+      </p>
+    </div>
+
+    <div class="value__grid">
+      <div class="value-card reveal">
+        <div class="value-card__icon" aria-hidden="true">🧭</div>
+        <h3>AI Funnel Strategy</h3>
+        <p>Mapping the exact path a visitor takes from first click to closed customer, built around your offer.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon" aria-hidden="true">🎨</div>
+        <h3>High-Converting Design</h3>
+        <p>Pages built to hold attention and guide the eye toward a single, obvious next step.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon" aria-hidden="true">🤖</div>
+        <h3>Automation</h3>
+        <p>Forms, CRM, email and AI assistants connected so no lead ever falls through the cracks.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon" aria-hidden="true">🎯</div>
+        <h3>Lead Generation</h3>
+        <p>Capture systems designed to turn cold traffic into qualified, ready-to-talk leads.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon" aria-hidden="true">📈</div>
+        <h3>Conversion Optimization</h3>
+        <p>Ongoing refinement of copy, layout and flow based on how real visitors behave.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon" aria-hidden="true">🛠️</div>
+        <h3>Technical Support</h3>
+        <p>Hosting, integrations and fixes handled, so your funnel keeps running while you focus on the business.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 5. HOW IT WORKS -->
+  <!-- ============================================= -->
+  <section class="process" id="how-it-works" aria-label="How it works">
+    <div class="process__intro reveal">
+      <p class="section-kicker">How It Works</p>
+      <h2 class="section-title">From offer to live funnel in four steps.</h2>
+    </div>
+
+    <div class="process__grid">
+      <div class="process-card reveal">
+        <span class="process-card__index">01</span>
+        <h3>Strategy</h3>
+        <p>We start by understanding your offer, your audience and what a conversion actually looks like for your business.</p>
+      </div>
+
+      <div class="process-card reveal">
+        <span class="process-card__index">02</span>
+        <h3>Build</h3>
+        <p>We design and build the funnel around your customer's journey — every page with one clear job.</p>
+      </div>
+
+      <div class="process-card reveal">
+        <span class="process-card__index">03</span>
+        <h3>Automate</h3>
+        <p>Forms, CRM, email and AI systems get connected so follow-up happens automatically, every time.</p>
+      </div>
+
+      <div class="process-card reveal">
+        <span class="process-card__index">04</span>
+        <h3>Launch &amp; Optimize</h3>
+        <p>We launch the funnel and refine it based on real performance data, not guesswork.</p>
+      </div>
+    </div>
+
+    <div class="process__line" aria-hidden="true"></div>
+  </section>
+
+  <!-- Remaining sections (showcase, portfolio, results, testimonials, AI automation,
+       why us, guarantee, booking, final CTA, footer) will be added in the next pass. -->
+
+</main>
+
+<script>
+/* =============================================
+   AI AUTOMATIC FUNNEL — SITE SCRIPT
+============================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  initStickyNav();
+  initMobileNav();
+  initScrollReveal();
+  initScrollCue();
+});
+
+/* ---------------------------------------------
+   Sticky nav: solidify background after scrolling
+--------------------------------------------- */
+function initStickyNav() {
+  const nav = document.getElementById("nav");
+  if (!nav) return;
+
+  const onScroll = () => {
+    nav.classList.toggle("is-scrolled", window.scrollY > 12);
+  };
+
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
+
+/* ---------------------------------------------
+   Mobile hamburger menu
+--------------------------------------------- */
+function initMobileNav() {
+  const toggle = document.getElementById("navToggle");
+  const links = document.getElementById("navLinks");
+  if (!toggle || !links) return;
+
+  toggle.addEventListener("click", () => {
+    const isOpen = links.classList.toggle("is-open");
+    toggle.classList.toggle("is-open", isOpen);
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  // Close the menu after tapping a link (mobile UX)
+  links.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      links.classList.remove("is-open");
+      toggle.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+/* ---------------------------------------------
+   Scroll reveal via IntersectionObserver
+--------------------------------------------- */
+function initScrollReveal() {
+  const items = document.querySelectorAll(".reveal");
+  if (!items.length) return;
+
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((el) => el.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  items.forEach((el) => observer.observe(el));
+}
+
+/* ---------------------------------------------
+   Hero scroll-cue: click to jump to next section
+--------------------------------------------- */
+function initScrollCue() {
+  const cue = document.getElementById("scrollCue");
+  if (!cue) return;
+
+  cue.addEventListener("click", () => {
+    const nextSection = document.querySelector(".proof");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+}
+
+/* ---------------------------------------------
+   NOTE FOR LATER SECTIONS:
+   - Booking form submit handler + Calendly/GHL
+     embed hook will go here once that section is built.
+   - Portfolio filter logic (by category) will go here
+     once the portfolio grid is built.
+--------------------------------------------- */
+
+</script>
+</body>
+</html>
+olio of Anas Ansari: warehouse operations and inventory control, learning Dynamics 365.">
   <meta name="theme-color" content="#A8174D">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F5C400'/%3E%3Cstop offset='.5' stop-color='%23D9781A'/%3E%3Cstop offset='1' stop-color='%23A8174D'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
