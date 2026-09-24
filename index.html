@@ -304,6 +304,10 @@ h1,h2,h3,h4{line-height:1.15;text-wrap:balance}
 .book__in{position:relative;display:grid;gap:32px;padding:clamp(24px,5vw,56px);border-radius:calc(var(--radius-lg) - 1px);overflow:hidden;background:linear-gradient(160deg,rgba(12,16,70,.96),rgba(3,4,17,.98))}
 .book__in::before{content:"";position:absolute;left:50%;top:-40%;width:900px;height:600px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(49,91,255,.35),transparent 65%);pointer-events:none}
 .book__in>*{position:relative}
+.book__in.book__in--solo{display:flex;justify-content:center}
+.book__in--solo>div{width:100%;max-width:420px}
+.book__in--empty{min-height:clamp(220px,32vw,340px)}
+.calendar{max-width:420px;width:100%;margin-inline:auto}
 .book__list{display:grid;gap:12px;margin-top:24px}
 .book__list li{display:flex;gap:12px;align-items:center;color:#D7DDF3;font-weight:600;font-size:.94rem}
 .book__list li .ico{width:19px;height:19px;color:var(--cyan)}
@@ -926,61 +930,7 @@ textarea.input{resize:vertical;min-height:90px}
 
 <!-- ================= BOOK A CALL ================= -->
 <section class="section" id="book">
-  <div class="container">
-    <div class="book reveal">
-      <div class="book__in">
-        <div>
-          <span class="eyebrow">Book A Call</span>
-          <h2 class="h2">Let's Map Out <span class="serif grad">Your Funnel</span></h2>
-          <p class="lead">Tell us about your offer, audience and goals. We'll help you identify the funnel structure and next steps — no pressure, no obligation.</p>
-          <ul class="book__list">
-            <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>Free 20-minute strategy call</li>
-            <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>Custom funnel recommendation</li>
-            <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>No obligation, no hard sell</li>
-          </ul>
-
-          <!-- Simple demo calendar UI. Replace with an embedded Calendly / GoHighLevel widget — see script.js for exact instructions. -->
-          <div class="calendar" style="margin-top:28px" id="calendar" aria-label="Pick a call date and time">
-            <div class="calendar__head">
-              <b id="cal-month">—</b>
-              <div class="calendar__nav">
-                <button type="button" id="cal-prev" aria-label="Previous month"><svg class="ico" viewBox="0 0 24 24" style="transform:scaleX(-1)"><use href="#i-chevron"/></svg></button>
-                <button type="button" id="cal-next" aria-label="Next month"><svg class="ico" viewBox="0 0 24 24"><use href="#i-chevron"/></svg></button>
-              </div>
-            </div>
-            <div class="calendar__grid" id="cal-grid" role="grid">
-              <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
-            </div>
-            <div class="slots" id="cal-slots" hidden>
-              <button type="button" class="slot">9:00 AM</button>
-              <button type="button" class="slot">11:30 AM</button>
-              <button type="button" class="slot">1:00 PM</button>
-              <button type="button" class="slot">3:30 PM</button>
-              <button type="button" class="slot">5:00 PM</button>
-              <button type="button" class="slot">6:30 PM</button>
-            </div>
-            <p class="calendar__note" id="cal-note">Select a date to see available times.</p>
-          </div>
-        </div>
-
-        <div>
-          <form class="form" id="book-form" novalidate>
-            <div class="field"><label for="b-name">Full name</label><input class="input" id="b-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required></div>
-            <div class="field"><label for="b-email">Email</label><input class="input" id="b-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required></div>
-            <div class="field"><label for="b-site">Website (optional)</label><input class="input" id="b-site" name="website" type="url" autocomplete="url" placeholder="https://yourbusiness.com"></div>
-            <div class="field"><label for="b-build">What are you looking to build?</label><textarea class="input" id="b-build" name="build" placeholder="Tell us about your offer and goals" required></textarea></div>
-            <button class="btn btn--primary btn--block" type="submit">Book My Strategy Call <svg class="ico" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></button>
-            <p class="form__note">We reply within one business day.</p>
-          </form>
-          <div class="success" id="book-success" hidden role="status">
-            <div class="icon-tile"><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg></div>
-            <h3>You're booked in.</h3>
-            <p>Thanks — we'll confirm your call time by email shortly.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="container"></div>
 </section>
 
 <!-- ================= FINAL CTA ================= -->
