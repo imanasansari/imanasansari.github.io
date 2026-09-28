@@ -256,8 +256,8 @@ h1,h2,h3,h4{line-height:1.15;text-wrap:balance}
 .scrollrow .browser{flex:0 0 min(78vw,340px);scroll-snap-align:start}
 
 /* ---------- 14 MEDIA / PROOF WALL ---------- */
-.wall{columns:1;column-gap:16px}
-.wall .wall-card{break-inside:avoid;margin-bottom:16px;padding:20px;border-radius:18px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.wall{display:grid;grid-template-columns:1fr;gap:16px}
+.wall .wall-card{padding:20px;border-radius:18px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
 .wall-card__top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
 .wall-card__top b{font-size:.92rem}
 .wall-card__top small{display:block;color:var(--muted-2);font-size:.76rem}
@@ -296,6 +296,7 @@ h1,h2,h3,h4{line-height:1.15;text-wrap:balance}
 .quote figcaption small{color:var(--muted);font-size:.78rem}
 
 /* ---------- 19 FINAL CTA ---------- */
+#book{padding:0} /* empty anchor target for the "Book a Call" links — no dead space */
 .finalcta{position:relative;text-align:center;overflow:hidden}
 .finalcta::before{content:"";position:absolute;left:50%;top:50%;width:min(1000px,150%);height:700px;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(49,91,255,.42),transparent 62%);pointer-events:none}
 .finalcta__in{position:relative}
@@ -337,7 +338,6 @@ h1,h2,h3,h4{line-height:1.15;text-wrap:balance}
 @media (min-width:560px){
   .hero__cta{flex-direction:row;justify-content:center;max-width:none}
   .results-grid{grid-template-columns:repeat(2,1fr)}
-  .wall{columns:2}
   .slots{grid-template-columns:repeat(3,1fr)}
 }
 @media (min-width:640px){
@@ -364,7 +364,7 @@ h1,h2,h3,h4{line-height:1.15;text-wrap:balance}
   .sample-strip{grid-template-columns:repeat(4,1fr)}
   .automation{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
   .node-grid{margin-top:0}
-  .wall{columns:3}
+  .wall{grid-template-columns:repeat(3,1fr)}
   .footer__grid{grid-template-columns:1.4fr repeat(3,1fr)}
   .footer__bottom{flex-direction:row;justify-content:space-between;text-align:left}
   .sticky{display:none}
@@ -786,9 +786,8 @@ h1,h2,h3,h4{line-height:1.15;text-wrap:balance}
     </div>
     <div class="wall reveal" style="--d:.1s">
       <div class="wall-card"><div class="wall-card__top"><span class="avatar">ML</span><div><b>Marcus L.</b><small>E-commerce founder</small></div></div><p>"The AI follow-up alone paid for the project."</p></div>
-      <div class="wall-card"><div class="wall-card__top"><span class="avatar">TB</span><div><b>Tara B.</b><small>Wellness brand</small></div></div><p>"They explained every step — never felt like a black box."</p></div>
       <div class="wall-card"><div class="wall-card__top"><span class="avatar">SW</span><div><b>Sam W.</b><small>SaaS founder</small></div></div><p>"Our demo requests are noticeably more qualified now."</p></div>
-      <div class="wall-card"><div class="wall-card__top"><span class="avatar">EC</span><div><b>Elena C.</b><small>Personal brand</small></div></div><p>"It finally feels like my content leads somewhere."</p></div>
+      <div class="wall-card"><div class="wall-card__top"><span class="avatar">TB</span><div><b>Tara B.</b><small>Wellness brand</small></div></div><p>"They explained every step — never felt like a black box."</p></div>
     </div>
   </div>
 </section>
